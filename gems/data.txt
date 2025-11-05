@@ -1,0 +1,20 @@
+# Sample Data for a 2x2 grid (100x100 total space)
+# Cells are 50x50:
+# Cell 2 (0,50) | Cell 3 (50,50)
+#-------------------------------
+# Cell 0 (0,0)  | Cell 1 (50,0)
+
+# Case 1: Early Output. p1,q1,r1,s1 all overlap and are fully in Cell 0.
+# Should be output by C-Rep Job 1.
+P,p1,10,10,20,20
+Q,q1,15,15,25,25
+R,r1,20,20,30,30
+S,s1,25,25,35,35
+
+# Case 2: Replicated Output. p2,q2,r2,s2 overlap.
+# q2 is in Cell 0. r2 crosses from Cell 0 to Cell 1. s2 is in Cell 1.
+# This tuple <p2,q2,r2,s2> should be marked in Job 1 and output by Job 2.
+P,p2,10,40,20,45
+Q,q2,15,40,25,45
+R,r2,20,40,60,45
+S,s2,55,40,65,45

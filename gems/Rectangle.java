@@ -14,7 +14,7 @@ import java.awt.geom.Point2D;
  */
 public class Rectangle implements WritableComparable<Rectangle> {
 
-    private double xl, yb, xr, yt; // left-x, bottom-y, right-x, top-y
+    public double xl, yb, xr, yt; // left-x, bottom-y, right-x, top-y
 
     public Rectangle() {}
 
