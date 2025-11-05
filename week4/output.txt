@@ -1,0 +1,4 @@
+101     John Doe,New York,903,Keyboard
+101     John Doe,New York,901,Laptop
+102     Jane Smith,Chicago,902,Mouse
+301     Mary Brown,Austin,904,Monitor
